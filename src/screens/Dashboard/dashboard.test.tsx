@@ -29,10 +29,10 @@ describe("Screen: Dashboard", () => {
 
     render(<Dashboard />);
 
-    await waitFor(() =>
-      expect(
-        screen.findByText(/rio do sul/i, {}, { timeout: 3000 })
-      ).toBeTruthy()
+    await waitFor(
+      () =>
+        expect(screen.findByText(/rio do sul/i, {}, { timeout: 3000 }))
+          .toBeTruthy
     );
   });
 
