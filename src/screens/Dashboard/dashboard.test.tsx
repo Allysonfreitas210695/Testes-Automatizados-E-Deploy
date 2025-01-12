@@ -31,7 +31,7 @@ describe("Screen: Dashboard", () => {
 
     await waitFor(() =>
       expect(
-        screen.findByText("Rio do Sul, BRs", {}, { timeout: 3000 })
+        screen.findByText("Rio do Sul, BR", {}, { timeout: 3000 })
       ).toBeTruthy()
     );
   });
